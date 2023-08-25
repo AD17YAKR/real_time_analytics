@@ -3,8 +3,6 @@
 This server is built using Express.js and MongoDB as the database.
 
 ## Table of Contents
-
-- [Introduction](#real_time_analytics)
 - [Routes](#routes)
 - [Dependencies](#dependencies)
 - [Getting Started](#getting-started)
@@ -14,9 +12,7 @@ This server is built using Express.js and MongoDB as the database.
 - `POST /events`: Endpoint to submit events.
   - Example cURL command:
     ```bash
-    curl --location 'https://real-time-analytics.onrender.com/events' \
---header 'Content-Type: application/json' \
---data-raw '{
+     curl --location 'https://real-time-analytics.onrender.com/events' --header 'Content-Type: application/json' --data-raw '{
     "ab_test_id": "test5556",
     "ab_test_version": "v2",
     "amp_enabled": false,
@@ -77,10 +73,8 @@ This server is built using Express.js and MongoDB as the database.
         "is_mobile": false,
         "is_proxy": false,
         "is_prefetched": false
-    }
-}
-'
-    ```
+    }}'
+
 
 - `GET /metrics`: Endpoint to retrieve metrics.
   - Example cURL command:
